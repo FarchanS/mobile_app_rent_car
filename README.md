@@ -6,5 +6,5 @@ Institut Teknologi Tangerang Selatan
 
 program ini dikerjakan oleh:
 1. Muhammad Farchan Setyawan : 1002210072
-2. Ria
-3. Desi
+2. Ria Puji Astuti : 1002210024
+3. Desi Triparwanti : 1002210018
