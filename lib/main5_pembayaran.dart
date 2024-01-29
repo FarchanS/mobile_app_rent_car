@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app_rent_car/main2_welcome.dart';
+import 'package:mobile_app_rent_car/main2_welcome2.dart';
 
-void main() {
-  runApp(const MyApp5());
-}
-
-class MyApp5 extends StatelessWidget {
-  const MyApp5({super.key});
+class Pembayaran extends StatelessWidget {
+  const Pembayaran({super.key});
 
   // This widget is the root of your application.
   @override
@@ -44,7 +40,7 @@ class AndroidLarge2 extends StatelessWidget {
           child: Stack(
             children: [
               // ====== bar biru atas =====
-              Positioned(
+              /*Positioned(
                 left: 0,
                 top: 0,
                 child: Container(
@@ -52,7 +48,7 @@ class AndroidLarge2 extends StatelessWidget {
                   height: 41,
                   decoration: const BoxDecoration(color: Color(0xFF2A2162)),
                 ),
-              ),
+              ),*/
 
               // ===== Pic Profile =====
               Positioned(
@@ -318,237 +314,6 @@ class AndroidLarge2 extends StatelessWidget {
                   ),
                 ),
               ),
-
-              //===== bar biru bawah =====
-              Positioned(
-                left: 0,
-                top: 732,
-                child: Container(
-                  width: 360,
-                  height: 60,
-                  decoration: const BoxDecoration(color: Color(0xFF2A2162)),
-                ),
-              ),
-
-              // === home icon ===
-              /*Positioned( 
-                left: 52,
-                top: 749,
-                child: Container(
-                  width: 27,
-                  height: 28,
-                  padding: const EdgeInsets.symmetric(vertical: 1.75),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      //,
-                    ],
-                  ),
-                ),
-              ),*/
-
-              const Positioned(
-                left: 52,
-                top: 750,
-                child: SizedBox(
-                  width: 40,
-                  height: 15,
-                  child: Text(
-                    'HOME',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 13,
-                      fontFamily: 'Inter',
-                      fontWeight: FontWeight.w400,
-                      height: 0,
-                    ),
-                  ),
-                ),
-              ),
-
-              // === pesanan icon ===
-              /*Positioned(
-                left: 155,
-                top: 749,
-                child: Container(
-                  width: 25,
-                  height: 27,
-                  padding: const EdgeInsets.symmetric(vertical: 3.38),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(color: Color(0x00F1E8E8)),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      //,
-                    ],
-                  ),
-                ),
-              ),*/
-
-              const Positioned(
-                left: 150,
-                top: 750,
-                child: SizedBox(
-                  width: 67,
-                  height: 16,
-                  child: Text(
-                    'PESANAN',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 13,
-                      fontFamily: 'Inter',
-                      fontWeight: FontWeight.w400,
-                      height: 0,
-                    ),
-                  ),
-                ),
-              ),
-
-              // === akun icon ===
-              /*Positioned(
-                left: 253,
-                top: 749,
-                child: Container(
-                  width: 26,
-                  height: 27,
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 3.25, vertical: 3.38),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      //,
-                    ],
-                  ),
-                ),
-              ),*/
-
-              const Positioned(
-                left: 253,
-                top: 750,
-                child: SizedBox(
-                  width: 68,
-                  height: 15,
-                  child: Text(
-                    'AKUN',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 13,
-                      fontFamily: 'Inter',
-                      fontWeight: FontWeight.w400,
-                      height: 0,
-                    ),
-                  ),
-                ),
-              ),
-
-              // ===== Script di buang =====
-              // ===== Nama Lisa di pic profile =====
-              /*Positioned(
-                left: 274,
-                top: 122,
-                child: SizedBox(
-                  width: 72,
-                  height: 31,
-                  child: Text(
-                    'Lisa',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 12,
-                      fontFamily: 'Roboto',
-                      fontWeight: FontWeight.w500,
-                      height: 0,
-                    ),
-                  ),
-                ),
-              ),*/
-
-              /*Positioned(
-                left: 255,
-                top: 9,
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 0.68, vertical: 1.90),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(color: Colors.black.withOpacity(0)),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      //,
-                    ],
-                  ),
-                ),
-              ),*/
-
-              /*Positioned(
-                left: 287,
-                top: 11,
-                child: Container(
-                  width: 20,
-                  height: 21,
-                  padding: const EdgeInsets.symmetric(vertical: 3.15),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(color: Color(0x00F9F9F9)),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      //,
-                    ],
-                  ),
-                ),
-              ),*/
-
-              /*Positioned(
-                left: 320,
-                top: 11,
-                child: Container(
-                  width: 19,
-                  height: 21,
-                  padding: const EdgeInsets.symmetric(vertical: 5.25),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(color: Colors.black.withOpacity(0)),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      //,
-                    ],
-                  ),
-                ),
-              ),*/
-
-              /*Positioned(
-                left: 88,
-                top: 691,
-                child: Container(
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/0x0"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
-              ),*/
             ],
           ),
         ),

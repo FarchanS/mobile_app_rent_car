@@ -1,5 +1,5 @@
 import 'package:mobile_app_rent_car/main.dart';
-import 'package:mobile_app_rent_car/main2_welcome.dart';
+import 'package:mobile_app_rent_car/main2_welcome2.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

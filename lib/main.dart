@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:mobile_app_rent_car/main2_welcome.dart';
+import 'package:mobile_app_rent_car/main2_welcome2.dart';
 import 'package:mobile_app_rent_car/forgot_password.dart';
+import 'package:mobile_app_rent_car/signup.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -70,6 +71,13 @@ class _LogInState extends State<AndroidLarge2> {
             backgroundColor: Colors.orangeAccent,
             content: Text(
               "Wrong User or Password Provided by User",
+              style: TextStyle(fontSize: 18.0),
+            )));
+      } else if (e.code == 'invalid-email') {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            backgroundColor: Colors.orangeAccent,
+            content: Text(
+              "The email address is badly formatted.",
               style: TextStyle(fontSize: 18.0),
             )));
       }
@@ -194,88 +202,26 @@ class _LogInState extends State<AndroidLarge2> {
               child: Text("Forgot Password?",
                   style: TextStyle(
                       color: Color.fromARGB(225, 184, 166, 6),
-                      //Color(0xFF8c8e98),
                       fontSize: 18.0,
                       fontWeight: FontWeight.w500)),
             ),
             SizedBox(
               height: 20.0,
             ),
-
-            /*
-            Text(
-              "or LogIn with",
-              style: TextStyle(
-                  color: Color(0xFF273671),
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.w500),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => SignUp()));
+              },
+              child: Text("Create New Account?",
+                  style: TextStyle(
+                      color: Color.fromARGB(225, 184, 166, 6),
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.w500)),
             ),
-            */
-            /*
             SizedBox(
-              height: 30.0,
+              height: 20.0,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                GestureDetector(
-                  onTap: (){
-                    AuthMethods().signInWithGoogle(context);
-                  },
-                  child: Image.asset(
-                    "images/google.png",
-                    height: 45,
-                    width: 45,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                SizedBox(
-                  width: 30.0,
-                ),
-                GestureDetector(
-                  onTap: (){
-                    AuthMethods().signInWithApple();
-                  },
-                  child: Image.asset(
-                    "images/apple1.png",
-                    height: 50,
-                    width: 50,
-                    fit: BoxFit.cover,
-                  ),
-                )
-              ],
-            ),
-            */
-            /*SizedBox(
-              height: 40.0,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text("Don't have an account?",
-                    style: TextStyle(
-                        color: Color(0xFF8c8e98),
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.w500)),
-                SizedBox(
-                  width: 5.0,
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => SignUp()));
-                  },
-                  child: Text(
-                    "SignUp",
-                    style: TextStyle(
-                        color: Color(0xFF273671),
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.w500),
-                  ),
-                ),
-              ],
-            )
-            */
           ],
         ),
       ),
@@ -342,116 +288,7 @@ class _LogInState extends State<AndroidLarge2> {
                 ),
               ),
 
-              // ===== Login =====
-              const Positioned(
-                  left: 54,
-                  top: 381,
-                  child: Column(
-                    children: [
-                      Column(
-                      padding: 
-                        EdgeInsets.symmetric(vertical: 2.0, horizontal: 30.0),
-                      decoration: BoxDecoration(
-                            color: Color(0xFFedf0f8),
-                            borderRadius: BorderRadius.circular(30)),
-                      )
-                      )
-                  )
-                  ),
-
-                
-                    ]
-                  ),
-                  //  children: [
-                      //Container(
-                        /*padding:
-                            EdgeInsets.symmetric(vertical: 2.0, horizontal: 30.0),
-                        decoration: BoxDecoration(
-                            color: Color(0xFFedf0f8),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: TextFormField(
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return 'Please Enter E-mail';
-                            }
-                            return null;
-                          },
-                          controller: mailcontroller,
-                          decoration: InputDecoration(
-                              border: InputBorder.none,
-                              hintText: "Email",
-                              hintStyle: TextStyle(
-                                  color: Color(0xFFb2b7bf), fontSize: 18.0)),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 30.0,
-                      ),
-                    //], */
-                  /*SizedBox(
-                    width: 250,
-                    child: TextField(
-                      obscureText: false,
-                      autocorrect: false,
-                      keyboardType: TextInputType.emailAddress,
-                      textInputAction: TextInputAction.next,
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(),
-                        labelText: 'Email',
-                      ),
-                    ),
-                  )*/
-                  
-                  ),
-              const Positioned(
-                  left: 54,
-                  top: 458,
-                  child: SizedBox(
-                    width: 250,
-                    child: TextField(
-                      obscureText: true,
-                      autocorrect: false,
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(),
-                        labelText: 'Password',
-                      ),
-                    ),
-                  )),
-
-              // ===== Button Login =====
-              Positioned(
-                left: 120,
-                top: 550,
-                width: 130,
-                height: 30,
-                child: ElevatedButton(
-                  child: const Text('LOGIN'),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const MyApp2()),
-                    );
-                  },
-                ),
-              ),
-
-              // ===== Button Daftar =====
-              Positioned(
-                left: 120,
-                top: 600,
-                width: 130,
-                height: 30,
-                child: ElevatedButton(
-                  child: const Text('DAFTAR'),
-                  onPressed: () {
-                    // Navigate to second route when tapped.
-                    //Navigator.push(
-                    //  context,
-                    //  MaterialPageRoute(builder: (context) => const main2 welcome()),
-                    //);
-                  },
-                ),
-              ),
+              
             ],
           ),
         ),

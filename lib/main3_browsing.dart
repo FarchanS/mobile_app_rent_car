@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app_rent_car/main4_pesanan.dart';
 
-void main() {
-  runApp(const MyApp3());
-}
-
-class MyApp3 extends StatelessWidget {
-  const MyApp3({super.key});
+class Browsing extends StatelessWidget {
+  const Browsing({super.key});
 
   // This widget is the root of your application.
   @override
@@ -44,7 +40,7 @@ class AndroidLarge2 extends StatelessWidget {
           child: Stack(
             children: [
               // ===== bar biru atas =====
-              Positioned(
+              /*Positioned(
                 left: 0,
                 top: 0,
                 child: Container(
@@ -52,7 +48,7 @@ class AndroidLarge2 extends StatelessWidget {
                   height: 43,
                   decoration: const BoxDecoration(color: Color(0xFF2A2162)),
                 ),
-              ),
+              ),*/
 
               // ===== Pic profile =====
               Positioned(
@@ -81,7 +77,7 @@ class AndroidLarge2 extends StatelessWidget {
                   width: 242,
                   height: 31,
                   child: Text(
-                    'Browse Car',
+                    'Browse Car2',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 24,
@@ -465,7 +461,7 @@ class AndroidLarge2 extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const MyApp4()));
+                            builder: (context) => const Pesanan()));
                   },
                 ),
               ),
@@ -621,7 +617,7 @@ class AndroidLarge2 extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const MyApp4()));
+                            builder: (context) => const Pesanan()));
                   },
                 ),
               ),
@@ -886,47 +882,8 @@ class AndroidLarge2 extends StatelessWidget {
                 ),
               ),
 
-              /*Positioned(
-                left: 93,
-                top: 419,
-                child: Container(
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/0x0"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
-              ),*/
-
-              /*Positioned(
-                left: 69,
-                top: 496,
-                child: Container(
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/0x0"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
-              ),*/
-
-              /*Positioned(
-                left: 95,
-                top: 692,
-                child: Container(
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/0x0"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
-              ),*/
-
               // ===== bar biru bawah =====
-              Positioned(
+              /*Positioned(
                 left: 0,
                 top: 732,
                 child: Container(
@@ -935,27 +892,6 @@ class AndroidLarge2 extends StatelessWidget {
                   decoration: const BoxDecoration(color: Color(0xFF2A2162)),
                 ),
               ),
-
-              // === home icon ===
-              /*Positioned( 
-                left: 52,
-                top: 749,
-                child: Container(
-                  width: 27,
-                  height: 28,
-                  padding: const EdgeInsets.symmetric(vertical: 1.75),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      //,
-                    ],
-                  ),
-                ),
-              ),*/
 
               const Positioned(
                 left: 52,
@@ -977,27 +913,6 @@ class AndroidLarge2 extends StatelessWidget {
                 ),
               ),
 
-              // === pesanan icon ===
-              /*Positioned(
-                left: 155,
-                top: 749,
-                child: Container(
-                  width: 25,
-                  height: 27,
-                  padding: const EdgeInsets.symmetric(vertical: 3.38),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(color: Color(0x00F1E8E8)),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      //,
-                    ],
-                  ),
-                ),
-              ),*/
-
               const Positioned(
                 left: 150,
                 top: 750,
@@ -1018,28 +933,6 @@ class AndroidLarge2 extends StatelessWidget {
                 ),
               ),
 
-              // === akun icon ===
-              /*Positioned(
-                left: 253,
-                top: 749,
-                child: Container(
-                  width: 26,
-                  height: 27,
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 3.25, vertical: 3.38),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      //,
-                    ],
-                  ),
-                ),
-              ),*/
-
               const Positioned(
                 left: 253,
                 top: 750,
@@ -1058,7 +951,7 @@ class AndroidLarge2 extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
+              ),*/
             ],
           ),
         ),
