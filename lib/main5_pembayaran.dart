@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app_rent_car/main2_welcome2.dart';
+import 'package:mobile_app_rent_car/main3_browsing.dart';
 
 class Pembayaran extends StatelessWidget {
   const Pembayaran({super.key});
@@ -9,7 +9,7 @@ class Pembayaran extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
+        scaffoldBackgroundColor: const Color(0xFF18398D),
       ),
       home: Scaffold(
         body: ListView(children: const [
@@ -29,7 +29,7 @@ class AndroidLarge2 extends StatelessWidget {
       children: [
         Container(
           width: 360,
-          height: 800,
+          height: 640,
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             color: const Color(0xFFDADBE1),
@@ -39,21 +39,10 @@ class AndroidLarge2 extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              // ====== bar biru atas =====
-              /*Positioned(
-                left: 0,
-                top: 0,
-                child: Container(
-                  width: 360,
-                  height: 41,
-                  decoration: const BoxDecoration(color: Color(0xFF2A2162)),
-                ),
-              ),*/
-
               // ===== Pic Profile =====
               Positioned(
                 left: 281,
-                top: 68,
+                top: 20,
                 child: Container(
                   width: 55,
                   height: 51,
@@ -71,16 +60,16 @@ class AndroidLarge2 extends StatelessWidget {
 
               // ===== judul form pembayaran =====
               const Positioned(
-                left: 41,
-                top: 219,
+                left: 38,
+                top: 50,
                 child: SizedBox(
-                  width: 103,
-                  height: 19,
+                  width: 242,
+                  height: 31,
                   child: Text(
                     'Pembayaran',
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 16,
+                      fontSize: 24,
                       fontFamily: 'Roboto',
                       fontWeight: FontWeight.w700,
                       height: 0,
@@ -309,7 +298,7 @@ class AndroidLarge2 extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const MyApp2()));
+                              builder: (context) => const Browsing()));
                     },
                   ),
                 ),

@@ -10,7 +10,7 @@ class Spec extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
+        scaffoldBackgroundColor: const Color(0xFF18398D),
       ),
       home: Scaffold(
         body: ListView(children: const [
@@ -30,7 +30,7 @@ class AndroidLarge2 extends StatelessWidget {
       children: [
         Container(
           width: 360,
-          height: 800,
+          height: 640,
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             color: const Color(0xFFDADBE1),
@@ -42,13 +42,13 @@ class AndroidLarge2 extends StatelessWidget {
             children: [
               // ===== JUDUL Spesifikasi =====
               const Positioned(
-                left: 133,
-                top: 68,
+                left: 38,
+                top: 50,
                 child: Text(
                   'Specification',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 16,
+                    fontSize: 24,
                     fontFamily: 'Roboto',
                     fontWeight: FontWeight.w700,
                     height: 0,

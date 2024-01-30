@@ -44,37 +44,37 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAfaPX9yGnPfAleJUw1OM67Opt_UFXHXWE',
-    appId: '1:24543238125:web:8f09cb005c69cce4f979e4',
-    messagingSenderId: '24543238125',
-    projectId: 'rent-car-711b1',
-    authDomain: 'rent-car-711b1.firebaseapp.com',
-    storageBucket: 'rent-car-711b1.appspot.com',
+    apiKey: 'AIzaSyAhHMxX61XWzu2uPYc5w2iljMArmgKFajI',
+    appId: '1:334945658513:web:1df61e51bd1f20f6770130',
+    messagingSenderId: '334945658513',
+    projectId: 'itts-aplikasi-mobile',
+    authDomain: 'itts-aplikasi-mobile.firebaseapp.com',
+    storageBucket: 'itts-aplikasi-mobile.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDqPKTsSYrhw-hTTo5O-VmM9F9xPDpSExs',
-    appId: '1:24543238125:android:043306d399bb8b83f979e4',
-    messagingSenderId: '24543238125',
-    projectId: 'rent-car-711b1',
-    storageBucket: 'rent-car-711b1.appspot.com',
+    apiKey: 'AIzaSyC2NICaKvxucpWuQZfHTSC1FdrXgRV6Cmk',
+    appId: '1:334945658513:android:7e3f010de4583b6b770130',
+    messagingSenderId: '334945658513',
+    projectId: 'itts-aplikasi-mobile',
+    storageBucket: 'itts-aplikasi-mobile.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyARYx0hbCsP6R_Bx33TJrJ4by9y-M9tSzU',
-    appId: '1:24543238125:ios:a527ec4efcbfe783f979e4',
-    messagingSenderId: '24543238125',
-    projectId: 'rent-car-711b1',
-    storageBucket: 'rent-car-711b1.appspot.com',
+    apiKey: 'AIzaSyBij9s1JnRRrSGmwJ6MJv0TqU5w33IT3_0',
+    appId: '1:334945658513:ios:41112781529e7010770130',
+    messagingSenderId: '334945658513',
+    projectId: 'itts-aplikasi-mobile',
+    storageBucket: 'itts-aplikasi-mobile.appspot.com',
     iosBundleId: 'com.example.appRentalMobil',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyARYx0hbCsP6R_Bx33TJrJ4by9y-M9tSzU',
-    appId: '1:24543238125:ios:a7093a354d2874f5f979e4',
-    messagingSenderId: '24543238125',
-    projectId: 'rent-car-711b1',
-    storageBucket: 'rent-car-711b1.appspot.com',
+    apiKey: 'AIzaSyBij9s1JnRRrSGmwJ6MJv0TqU5w33IT3_0',
+    appId: '1:334945658513:ios:599d423fd9601271770130',
+    messagingSenderId: '334945658513',
+    projectId: 'itts-aplikasi-mobile',
+    storageBucket: 'itts-aplikasi-mobile.appspot.com',
     iosBundleId: 'com.example.appRentalMobil.RunnerTests',
   );
 }

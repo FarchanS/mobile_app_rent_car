@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "24543238125",
-    "project_id": "rent-car-711b1",
-    "storage_bucket": "rent-car-711b1.appspot.com"
+    "project_number": "334945658513",
+    "project_id": "itts-aplikasi-mobile",
+    "storage_bucket": "itts-aplikasi-mobile.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:24543238125:android:043306d399bb8b83f979e4",
+        "mobilesdk_app_id": "1:334945658513:android:7e3f010de4583b6b770130",
         "android_client_info": {
           "package_name": "com.example.mobile_app_rent_car"
         }
@@ -15,7 +15,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDqPKTsSYrhw-hTTo5O-VmM9F9xPDpSExs"
+          "current_key": "AIzaSyC2NICaKvxucpWuQZfHTSC1FdrXgRV6Cmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334945658513:android:149f8bf7af8226fd770130",
+        "android_client_info": {
+          "package_name": "com.example.siak1002210072"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2NICaKvxucpWuQZfHTSC1FdrXgRV6Cmk"
         }
       ],
       "services": {

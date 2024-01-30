@@ -9,7 +9,7 @@ class Browsing extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
+        scaffoldBackgroundColor: const Color(0xFF18398D),
       ),
       home: Scaffold(
         body: ListView(children: const [
@@ -29,7 +29,7 @@ class AndroidLarge2 extends StatelessWidget {
       children: [
         Container(
           width: 360,
-          height: 800,
+          height: 640,
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             color: const Color(0xFFDADBE1),
@@ -39,21 +39,10 @@ class AndroidLarge2 extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              // ===== bar biru atas =====
-              /*Positioned(
-                left: 0,
-                top: 0,
-                child: Container(
-                  width: 360,
-                  height: 43,
-                  decoration: const BoxDecoration(color: Color(0xFF2A2162)),
-                ),
-              ),*/
-
               // ===== Pic profile =====
               Positioned(
                 left: 281,
-                top: 66,
+                top: 20,
                 child: Container(
                   width: 55,
                   height: 51,
@@ -71,13 +60,13 @@ class AndroidLarge2 extends StatelessWidget {
 
               // ===== Title =====
               const Positioned(
-                left: 16,
-                top: 77,
+                left: 38,
+                top: 50,
                 child: SizedBox(
                   width: 242,
                   height: 31,
                   child: Text(
-                    'Browse Car2',
+                    'Browse Car',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 24,
@@ -92,7 +81,7 @@ class AndroidLarge2 extends StatelessWidget {
               // ===== search bar =====
               Positioned(
                 left: 34,
-                top: 137,
+                top: 100,
                 child: Container(
                   width: 283,
                   height: 41,
@@ -109,7 +98,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               const Positioned(
                 left: 50,
-                top: 150,
+                top: 110,
                 child: SizedBox(
                   width: 86,
                   height: 15,
@@ -159,9 +148,10 @@ class AndroidLarge2 extends StatelessWidget {
               ),*/
 
               // ===== horizontal menu =====
+              // ===== ALL =====
               const Positioned(
-                left: 49,
-                top: 198,
+                left: 45,
+                top: 150,
                 child: SizedBox(
                   width: 37,
                   height: 21,
@@ -178,9 +168,10 @@ class AndroidLarge2 extends StatelessWidget {
                 ),
               ),
 
+              // ===== Sedan =====
               const Positioned(
                 left: 86,
-                top: 198,
+                top: 150,
                 child: SizedBox(
                   width: 40,
                   height: 21,
@@ -197,9 +188,10 @@ class AndroidLarge2 extends StatelessWidget {
                 ),
               ),
 
+              // ===== SUV =====
               const Positioned(
                 left: 139,
-                top: 198,
+                top: 150,
                 child: SizedBox(
                   width: 37,
                   height: 21,
@@ -216,9 +208,10 @@ class AndroidLarge2 extends StatelessWidget {
                 ),
               ),
 
+              // ===== MVP =====
               const Positioned(
                 left: 198,
-                top: 198,
+                top: 150,
                 child: SizedBox(
                   width: 37,
                   height: 21,
@@ -235,9 +228,10 @@ class AndroidLarge2 extends StatelessWidget {
                 ),
               ),
 
+              // ===== Hatchback =====
               const Positioned(
                 left: 245,
-                top: 198,
+                top: 150,
                 child: SizedBox(
                   width: 66,
                   height: 21,
@@ -254,24 +248,11 @@ class AndroidLarge2 extends StatelessWidget {
                 ),
               ),
 
-              /*Positioned(
-                left: 278,
-                top: 62,
-                child: Container(
-                  width: 61,
-                  height: 60,
-                  decoration: ShapeDecoration(
-                    color: Color(0x00FEFAFA),
-                    shape: OvalBorder(),
-                  ),
-                ),
-              ),*/
-
               // ===== Filter per merk =====
               // === Honda ===
               Positioned(
                 left: 21,
-                top: 220,
+                top: 180,
                 child: Container(
                   width: 72,
                   height: 27,
@@ -286,7 +267,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               const Positioned(
                 left: 40,
-                top: 226,
+                top: 187,
                 child: SizedBox(
                   width: 48,
                   height: 11,
@@ -306,7 +287,7 @@ class AndroidLarge2 extends StatelessWidget {
               // === Toyota ===
               Positioned(
                 left: 104,
-                top: 220,
+                top: 180,
                 child: Container(
                   width: 72,
                   height: 27,
@@ -321,7 +302,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               const Positioned(
                 left: 122,
-                top: 226,
+                top: 187,
                 child: SizedBox(
                   width: 42,
                   height: 10,
@@ -341,7 +322,7 @@ class AndroidLarge2 extends StatelessWidget {
               // === BMW ===
               Positioned(
                 left: 187,
-                top: 220,
+                top: 180,
                 child: Container(
                   width: 72,
                   height: 27,
@@ -356,7 +337,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               const Positioned(
                 left: 210,
-                top: 227,
+                top: 187,
                 child: SizedBox(
                   width: 36,
                   height: 11,
@@ -376,7 +357,7 @@ class AndroidLarge2 extends StatelessWidget {
               // === Mercedez ===
               Positioned(
                 left: 269,
-                top: 220,
+                top: 180,
                 child: Container(
                   width: 72,
                   height: 27,
@@ -391,7 +372,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               const Positioned(
                 left: 278,
-                top: 225,
+                top: 187,
                 child: SizedBox(
                   width: 61,
                   height: 11,
@@ -411,7 +392,7 @@ class AndroidLarge2 extends StatelessWidget {
               // ===== Container Toyota Azanza =====
               Positioned(
                 left: 56,
-                top: 302,
+                top: 250,
                 child: InkWell(
                   child: Container(
                     width: 247,
@@ -432,30 +413,6 @@ class AndroidLarge2 extends StatelessWidget {
                         )
                       ],
                     ),
-                    //child:
-                    /*Text(
-                          'Search',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 37, 37, 37),
-                            
-                          ),
-                        ),*/
-                    /*  Column(
-                        children: [
-                          Text(
-                            'Toyota Avanza',
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 37, 37, 37),
-                            ),
-                          ),
-                          Text(
-                            'Automatic/Manual',
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 37, 37, 37),
-                            ),
-                          ),
-                        ],
-                      )*/
                   ),
                   onTap: () {
                     Navigator.push(
@@ -466,51 +423,9 @@ class AndroidLarge2 extends StatelessWidget {
                 ),
               ),
 
-              /*Positioned(
-                left: 62,
-                top: 266,
-                child: SizedBox(
-                  width: 118,
-                  height: 21,
-                  child: Text(
-                    'Toyota Avanza',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontFamily: 'Roboto',
-                      fontWeight: FontWeight.w700,
-                      height: 0,
-                    ),
-                  ),
-                ),
-              ),*/
-
-              /*Positioned(
-                left: 56,
-                top: 302,
-                child: Container(
-                  width: 247,
-                  height: 102,
-                  decoration: ShapeDecoration(
-                    color: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    shadows: [
-                      BoxShadow(
-                        color: Color(0x3F000000),
-                        blurRadius: 4,
-                        offset: Offset(0, 4),
-                        spreadRadius: 0,
-                      )
-                    ],
-                  ),
-                ),
-              ),*/
-
               const Positioned(
                 left: 63,
-                top: 309,
+                top: 260,
                 child: SizedBox(
                   width: 118,
                   height: 21,
@@ -528,8 +443,8 @@ class AndroidLarge2 extends StatelessWidget {
               ),
 
               const Positioned(
-                left: 61,
-                top: 330,
+                left: 63,
+                top: 280,
                 child: SizedBox(
                   width: 96,
                   height: 11,
@@ -548,7 +463,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               Positioned(
                 left: 73,
-                top: 372,
+                top: 320,
                 child: Container(
                   width: 63,
                   height: 27,
@@ -563,7 +478,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               const Positioned(
                 left: 80,
-                top: 378,
+                top: 327,
                 child: SizedBox(
                   width: 56,
                   height: 15,
@@ -571,20 +486,10 @@ class AndroidLarge2 extends StatelessWidget {
                     TextSpan(
                       children: [
                         TextSpan(
-                          text: '500K/',
+                          text: '500K/day',
                           style: TextStyle(
                             color: Color(0xFFFBFAFA),
                             fontSize: 12,
-                            fontFamily: 'Roboto',
-                            fontWeight: FontWeight.w700,
-                            height: 0,
-                          ),
-                        ),
-                        TextSpan(
-                          text: 'day',
-                          style: TextStyle(
-                            color: Color(0xFFFBFAFA),
-                            fontSize: 10,
                             fontFamily: 'Roboto',
                             fontWeight: FontWeight.w700,
                             height: 0,
@@ -598,7 +503,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               Positioned(
                 left: 160,
-                top: 309,
+                top: 260,
                 child: InkWell(
                   child: Container(
                     width: 140,
@@ -625,7 +530,7 @@ class AndroidLarge2 extends StatelessWidget {
               // ===== Container Toyota Rush =====
               Positioned(
                 left: 57,
-                top: 437,
+                top: 377,
                 child: Container(
                   width: 247,
                   height: 102,
@@ -647,8 +552,8 @@ class AndroidLarge2 extends StatelessWidget {
               ),
 
               const Positioned(
-                left: 66,
-                top: 444,
+                left: 63,
+                top: 390,
                 child: SizedBox(
                   width: 118,
                   height: 21,
@@ -666,8 +571,8 @@ class AndroidLarge2 extends StatelessWidget {
               ),
 
               const Positioned(
-                left: 64,
-                top: 465,
+                left: 63,
+                top: 410,
                 child: SizedBox(
                   width: 96,
                   height: 11,
@@ -686,7 +591,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               Positioned(
                 left: 76,
-                top: 507,
+                top: 447,
                 child: Container(
                   width: 63,
                   height: 27,
@@ -701,7 +606,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               const Positioned(
                 left: 83,
-                top: 513,
+                top: 455,
                 child: SizedBox(
                   width: 56,
                   height: 15,
@@ -709,20 +614,10 @@ class AndroidLarge2 extends StatelessWidget {
                     TextSpan(
                       children: [
                         TextSpan(
-                          text: '500K/',
+                          text: '500K/day',
                           style: TextStyle(
                             color: Color(0xFFFBFAFA),
                             fontSize: 12,
-                            fontFamily: 'Roboto',
-                            fontWeight: FontWeight.w700,
-                            height: 0,
-                          ),
-                        ),
-                        TextSpan(
-                          text: 'day',
-                          style: TextStyle(
-                            color: Color(0xFFFBFAFA),
-                            fontSize: 10,
                             fontFamily: 'Roboto',
                             fontWeight: FontWeight.w700,
                             height: 0,
@@ -736,7 +631,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               Positioned(
                 left: 163,
-                top: 437,
+                top: 377,
                 child: Container(
                   width: 140,
                   height: 102,
@@ -755,7 +650,7 @@ class AndroidLarge2 extends StatelessWidget {
               // ===== Container Toyota Veloz =====
               Positioned(
                 left: 58,
-                top: 576,
+                top: 510,
                 child: Container(
                   width: 247,
                   height: 102,
@@ -777,8 +672,8 @@ class AndroidLarge2 extends StatelessWidget {
               ),
 
               const Positioned(
-                left: 65,
-                top: 583,
+                left: 63,
+                top: 523,
                 child: SizedBox(
                   width: 118,
                   height: 21,
@@ -797,7 +692,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               const Positioned(
                 left: 63,
-                top: 604,
+                top: 544,
                 child: SizedBox(
                   width: 96,
                   height: 11,
@@ -816,7 +711,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               Positioned(
                 left: 75,
-                top: 646,
+                top: 576,
                 child: Container(
                   width: 63,
                   height: 27,
@@ -831,7 +726,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               const Positioned(
                 left: 82,
-                top: 652,
+                top: 582,
                 child: SizedBox(
                   width: 56,
                   height: 15,
@@ -839,20 +734,10 @@ class AndroidLarge2 extends StatelessWidget {
                     TextSpan(
                       children: [
                         TextSpan(
-                          text: '500K/',
+                          text: '500K/day',
                           style: TextStyle(
                             color: Color(0xFFFBFAFA),
                             fontSize: 12,
-                            fontFamily: 'Roboto',
-                            fontWeight: FontWeight.w700,
-                            height: 0,
-                          ),
-                        ),
-                        TextSpan(
-                          text: 'day',
-                          style: TextStyle(
-                            color: Color(0xFFFBFAFA),
-                            fontSize: 10,
                             fontFamily: 'Roboto',
                             fontWeight: FontWeight.w700,
                             height: 0,
@@ -866,7 +751,7 @@ class AndroidLarge2 extends StatelessWidget {
 
               Positioned(
                 left: 151,
-                top: 580,
+                top: 510,
                 child: Container(
                   width: 154,
                   height: 93,

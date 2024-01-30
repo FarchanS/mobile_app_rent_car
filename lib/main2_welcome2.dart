@@ -24,7 +24,7 @@ class _HomeState extends State<MyApp2> {
       appBar: AppBar(
           leading: const SizedBox(),
           centerTitle: false,
-          backgroundColor: const Color.fromARGB(255, 18, 32, 47),
+          backgroundColor: const Color(0xFF18398D),
           actions: [
             IconButton(
               onPressed: () {
@@ -38,7 +38,7 @@ class _HomeState extends State<MyApp2> {
       ),
       backgroundColor: const Color.fromRGBO(16, 195, 192, 1),
       bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: const Color.fromARGB(255, 18, 32, 47),
+          backgroundColor: const Color(0xFF18398D),
           selectedItemColor: Colors.grey,
           unselectedItemColor: Colors.white,
           currentIndex: selectedIndex,
