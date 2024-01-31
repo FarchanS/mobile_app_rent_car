@@ -82,21 +82,64 @@ class AndroidLarge2 extends StatelessWidget {
               Positioned(
                 left: 34,
                 top: 100,
-                child: Container(
+                child: SizedBox(
                   width: 283,
-                  height: 41,
-                  decoration: ShapeDecoration(
+                  height: 35,
+                  child: /*TextFormField(
+                    style: TextStyle(
+                        backgroundColor: Colors.white,
+                        color: const Color.fromARGB(255, 10, 10, 10)),
+                    decoration: InputDecoration(
+                      fillColor: Colors.white,
+                      border: InputBorder.none,
+                      hintText: "Search",
+                      hintStyle:
+                          TextStyle(color: Color(0xFFb2b7bf), fontSize: 18.0),
+                      prefixIcon: Icon(
+                        Icons.search,
+                        color: Colors.white70,
+                        size: 30.0,
+                      ),
+                    ),
+                  ),
+                ),*/
+                      Container(
+                    width: 283,
+                    height: 60,
+                    padding:
+                        EdgeInsets.symmetric(vertical: 0.0, horizontal: 5.0),
+                    decoration: BoxDecoration(
+                        color: Color(0xFFedf0f8),
+                        borderRadius: BorderRadius.circular(30)),
+                    child: TextFormField(
+                      textAlignVertical: TextAlignVertical.center,
+                      style: TextStyle(color: Color.fromARGB(255, 15, 12, 12)),
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Search",
+                        hintStyle:
+                            TextStyle(color: Color(0xFFb2b7bf), fontSize: 18.0),
+                        prefixIcon: Icon(
+                          Icons.search,
+                          color: Colors.black,
+                          size: 30.0,
+                        ),
+                      ),
+                    ),
+
+                    /*decoration: ShapeDecoration(
                     color: const Color(0xFFFEF9F9),
                     shape: RoundedRectangleBorder(
                       side:
                           const BorderSide(width: 1, color: Color(0xFF070707)),
                       borderRadius: BorderRadius.circular(15),
                     ),
+                  ),*/
                   ),
                 ),
               ),
 
-              const Positioned(
+              /*const Positioned(
                 left: 50,
                 top: 110,
                 child: SizedBox(
@@ -111,38 +154,6 @@ class AndroidLarge2 extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                       height: 0,
                     ),
-                  ),
-                ),
-              ),
-
-              // === icon search ===
-              /*Positioned( 
-                left: 282,
-                top: 148,
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  padding: const EdgeInsets.only(
-                    top: 3.17,
-                    left: 3,
-                    right: 2.94,
-                    bottom: 3.17,
-                  ),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 12.06,
-                        height: 12.67,
-                        child: Stack(children: [
-                          //,
-                        ]),
-                      ),
-                    ],
                   ),
                 ),
               ),*/

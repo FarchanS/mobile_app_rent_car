@@ -284,19 +284,29 @@ class AndroidLarge2 extends StatelessWidget {
                 top: 313,
                 child: Container(
                   width: 236,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFFF7F2F2),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5)),
-                    shadows: const [
+                  height: 20,
+                  padding:
+                      EdgeInsets.symmetric(vertical: 0.0, horizontal: 10.0),
+                  decoration: BoxDecoration(
+                    color: Color(0xFFedf0f8),
+                    borderRadius: BorderRadius.circular(5),
+                    boxShadow: const [
                       BoxShadow(
                         color: Color(0x3F000000),
                         blurRadius: 4,
                         offset: Offset(0, 4),
                         spreadRadius: 0,
-                      )
+                      ),
                     ],
+                  ),
+                  child: TextFormField(
+                    textAlignVertical: TextAlignVertical.bottom,
+                    style: TextStyle(color: Color.fromARGB(255, 15, 12, 12)),
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Nama",
+                        hintStyle: TextStyle(
+                            color: Color(0xFFb2b7bf), fontSize: 12.0)),
                   ),
                 ),
               ),
@@ -326,19 +336,29 @@ class AndroidLarge2 extends StatelessWidget {
                 top: 344,
                 child: Container(
                   width: 236,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFFF7F2F2),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5)),
-                    shadows: const [
+                  height: 20,
+                  padding:
+                      EdgeInsets.symmetric(vertical: 0.0, horizontal: 10.0),
+                  decoration: BoxDecoration(
+                    color: Color(0xFFedf0f8),
+                    borderRadius: BorderRadius.circular(5),
+                    boxShadow: const [
                       BoxShadow(
                         color: Color(0x3F000000),
                         blurRadius: 4,
                         offset: Offset(0, 4),
                         spreadRadius: 0,
-                      )
+                      ),
                     ],
+                  ),
+                  child: TextFormField(
+                    textAlignVertical: TextAlignVertical.bottom,
+                    style: TextStyle(color: Color.fromARGB(255, 15, 12, 12)),
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Alamat",
+                        hintStyle: TextStyle(
+                            color: Color(0xFFb2b7bf), fontSize: 12.0)),
                   ),
                 ),
               ),
@@ -368,19 +388,29 @@ class AndroidLarge2 extends StatelessWidget {
                 top: 379,
                 child: Container(
                   width: 236,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFFF7F2F2),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5)),
-                    shadows: const [
+                  height: 20,
+                  padding:
+                      EdgeInsets.symmetric(vertical: 0.0, horizontal: 10.0),
+                  decoration: BoxDecoration(
+                    color: Color(0xFFedf0f8),
+                    borderRadius: BorderRadius.circular(5),
+                    boxShadow: const [
                       BoxShadow(
                         color: Color(0x3F000000),
                         blurRadius: 4,
                         offset: Offset(0, 4),
                         spreadRadius: 0,
-                      )
+                      ),
                     ],
+                  ),
+                  child: TextFormField(
+                    textAlignVertical: TextAlignVertical.bottom,
+                    style: TextStyle(color: Color.fromARGB(255, 15, 12, 12)),
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "No Handphone",
+                        hintStyle: TextStyle(
+                            color: Color(0xFFb2b7bf), fontSize: 12.0)),
                   ),
                 ),
               ),
@@ -410,19 +440,30 @@ class AndroidLarge2 extends StatelessWidget {
                 top: 411,
                 child: Container(
                   width: 236,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFFF7F2F2),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5)),
-                    shadows: const [
+                  height: 20,
+                  padding:
+                      EdgeInsets.symmetric(vertical: 0.0, horizontal: 10.0),
+                  decoration: BoxDecoration(
+                    color: Color(0xFFedf0f8),
+                    borderRadius: BorderRadius.circular(5),
+                    boxShadow: const [
                       BoxShadow(
                         color: Color(0x3F000000),
                         blurRadius: 4,
                         offset: Offset(0, 4),
                         spreadRadius: 0,
-                      )
+                      ),
                     ],
+                  ),
+                  child: TextFormField(
+                    textAlignVertical: TextAlignVertical.bottom,
+                    style: TextStyle(color: Color.fromARGB(255, 15, 12, 12)),
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "No KTP",
+                      hintStyle:
+                          TextStyle(color: Color(0xFFb2b7bf), fontSize: 12.0),
+                    ),
                   ),
                 ),
               ),
@@ -452,19 +493,30 @@ class AndroidLarge2 extends StatelessWidget {
                 top: 442,
                 child: Container(
                   width: 236,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFFF7F2F2),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5)),
-                    shadows: const [
+                  height: 20,
+                  padding:
+                      EdgeInsets.symmetric(vertical: 0.0, horizontal: 10.0),
+                  decoration: BoxDecoration(
+                    color: Color(0xFFedf0f8),
+                    borderRadius: BorderRadius.circular(5),
+                    boxShadow: const [
                       BoxShadow(
                         color: Color(0x3F000000),
                         blurRadius: 4,
                         offset: Offset(0, 4),
                         spreadRadius: 0,
-                      )
+                      ),
                     ],
+                  ),
+                  child: TextFormField(
+                    textAlignVertical: TextAlignVertical.bottom,
+                    style: TextStyle(color: Color.fromARGB(255, 15, 12, 12)),
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "Tujuan",
+                      hintStyle:
+                          TextStyle(color: Color(0xFFb2b7bf), fontSize: 12.0),
+                    ),
                   ),
                 ),
               ),
